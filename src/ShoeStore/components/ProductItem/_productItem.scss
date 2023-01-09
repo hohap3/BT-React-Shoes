@@ -1,0 +1,13 @@
+.card {
+  .cart-name {
+    --height: 30px;
+    font-size: 24px;
+    height: var(--height);
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    line-height: 26px;
+    word-wrap: break-word;
+  }
+}

@@ -1,0 +1,38 @@
+.detail-modal {
+  &.active {
+    .modal-overlay {
+      visibility: visible;
+    }
+
+    .modal-container {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 1;
+      transition: all 0.4s;
+    }
+  }
+
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    visibility: hidden;
+  }
+
+  .modal-container {
+    width: 900px;
+    z-index: 100;
+    position: fixed;
+    top: 10%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 0;
+    transition: all 0.4s;
+    opacity: 0;
+    .card {
+      border: none;
+    }
+  }
+}
