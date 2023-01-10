@@ -203,6 +203,8 @@ export default class ShoeStore extends Component {
 
     newCartList.splice(index, 1);
 
+    // Update state
+
     this.setState({
       cartList: newCartList,
     });
